@@ -59,7 +59,7 @@ export async function addCardToDeck (key, qtnText, ansText) {
 
 export function clearLocalNotification () {
   return AsyncStorage.removeItem(NOTIFICATIONS_KEY)
-    then(Notifications.cancelAllScheduledNotificationsAsync)
+    .then(Notifications.cancelAllScheduledNotificationsAsync)
 }
 
 export function createNotification () {
